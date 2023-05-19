@@ -21,11 +21,10 @@ public class Main {
         customerQueueExecutors.submit(customer4AtQueue2);
         customerQueueExecutors.submit(customer5AtQueue2);
         customerQueueExecutors.shutdown();
-        for(;;){
-            if(customerQueueExecutors.isTerminated()){
+        for (; ; ) {
+            if (customerQueueExecutors.isTerminated()) {
                 break;
-            }
-            else {
+            } else {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -33,6 +32,6 @@ public class Main {
                 }
             }
         }
-        System.out.println("\n-----------------------------------------------\n today's total no of customers visited:"+BillingCounter.getCustomerId());
+        System.out.println("\n-----------------------------------------------\n today's total no of customers visited:" + BillingCounter.getCustomerId());
     }
 }
