@@ -32,6 +32,6 @@ public class Main {
                 }
             }
         }
-        System.out.println("\n-----------------------------------------------\n today's total no of customers visited:" + BillingCounter.getCustomerId());
+        System.out.println("-----------------------------------------------\n today's total no of customers visited:" + BillingCounter.getCustomerId());
     }
 }

@@ -29,11 +29,12 @@ public class BillingCounter implements Runnable {
             System.out.println("Counter no:" + counterNo + " ,Purchased item count:" + purchasedItemNo);
             if (purchasedItemNo >= 10) {
                 System.out.println("Customer No:" + customerId + " = Eligible for 100off on next purchase coupon");
+                System.out.println("We have sent the coupon on your registered number");
             } else {
                 System.out.println("Customer No:" + customerId + " = Not Eligible for 100off on next purchase coupon");
             }
+            System.out.println("Thank you for visiting us\n\n");
 
-            System.out.println("We have sent the coupon on your registered number\n");
         }
     }
 }
